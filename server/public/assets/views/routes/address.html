@@ -1,2 +1,26 @@
-<p>Welcome Home</p>
-<p>Here is a paragraph: {{thing}}</p>
+
+
+<div class="col-md-10">
+
+        <form name="userList">
+            <label >Select A User</label>
+
+        <select ng-model="user" ng-options="user.name for user in users" ng-change="getAddresses({{user.id}})" >{{user}}</select>
+
+        </form>
+
+        <div class="well" ng-repeat="address in addresses">
+            <h3>{{address.address_type}}</h3>
+            <p>{{address.address_street}}<br/>
+                {{address.address_city}},{{address.address_state}},{{address.address_zip}}
+
+            </p>
+
+
+
+        </div>
+
+
+</div>
+
+<!--<p>{{usersnpm}}</p>-->

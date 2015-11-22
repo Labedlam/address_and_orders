@@ -83,9 +83,6 @@ module.exports = function(grunt){
             },
 
 
-
-
-
             html: {
                 expand: true,
                 cwd: 'client/views/',
